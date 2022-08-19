@@ -1,0 +1,185 @@
+@media screen and (max-width: 1030px) {
+  .sec_contacts .dv_container {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .dv_theorical_projects .dv_theorical_container .dv_project {
+    /*flex-direction: column;*/
+  }
+
+  .dv_theorical_projects .dv_theorical_container .dv_project .dv_about a {
+    float: none;
+    margin: 20px auto 0;
+  }
+}
+
+/***** Pantalla móvil *****/
+@media screen and (max-width: 936px) {
+  header {
+    height: 100%;
+    flex-direction: column !important;
+    justify-content: space-between;
+    /*padding: 30px;*/
+    position: fixed;
+    /*display: none;*/
+    /*left: -90%;*/
+    left: -101%;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    
+    background-color: var(--primary_bg);
+  }
+  
+  header nav {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+  }
+
+  header nav ul {
+    /*border: 1px solid red;*/
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+  
+  header nav ul li {
+    width: 100%;
+  }
+
+  header nav ul li a i {
+    display: inline !important;
+  }
+
+  header .dv_logo {
+    /*border: 1px solid red;*/
+    align-self: flex-start;
+  }
+
+  header .dv_logo .dv_img a {
+    height: 100px;
+    width: 100px;
+  }
+
+  a.first, a.last {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+  }
+
+  .dv_btn_menu {
+    display: flex;
+  }
+
+  .sec_projects {
+    /*border: 1px solid red;*/
+  }
+  .sec_projects .dv_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec_projects .dv_container .dv_practical_projects,
+  .sec_projects .dv_container .dv_theorical_projects {
+    width: 70%;
+  }
+
+  .dv_theorical_projects .dv_theorical_container .dv_project .dv_img {
+    height: auto;
+  }
+
+  .dv_theorical_projects .dv_theorical_container .dv_project.project_pdf {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sec_featured_projects .dv_container .dv_featured_projects_container .dv_all_projects{
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 710px) {
+  .sec_welcome {
+    flex-direction: column;
+  }
+
+  .sec_welcome .dv_left,
+  .sec_welcome .dv_right {
+    /*border: 1px solid green;*/
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  /*.sec_welcome .dv_left .title {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+  }*/
+
+  .sec_contacts .dv_container .dv_contacts_container form {
+    grid-template-areas: "inp_name inp_name"
+                "inp_email inp_email"
+                "inp_subject inp_subject"
+                "inp_message inp_message"
+                "btn_send btn_send";
+  }
+
+  .sec_projects .dv_practical_projects,
+  .sec_projects .dv_theorical_projects {
+    /*border: 5px solid purple;*/
+    width: 100% !important;
+  }
+
+  .sec_featured_projects {
+    padding: 1rem;
+  }
+
+  footer .dv_social_networks {
+    flex-wrap: wrap;
+  }
+}
+
+/* Lo encuentro que es poco para hacerlo en una consulta aparte, por eso solo lo puse arriba
+@media screen and (max-width: 550px) {
+  .sec_projects .dv_practical_projects,
+  .sec_projects .dv_theorical_projects {
+    width: 100% !important;
+    border: 5px solid purple;
+  }
+}*/
+
+@media screen and (max-width: 420px) {
+  .sec_welcome .dv_left,
+  .sec_welcome .dv_right {
+    padding: 3rem 1rem;
+  }
+
+  .sec_welcome .dv_left .title {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .sec_featured_projects .dv_container {
+    width: 100%;
+  }
+
+  .sec_contacts .dv_container {
+    padding: 1rem;
+  }
+  
+  .sec_contacts .dv_container .dv_contacts_container .dv_inp label {
+    display: block;
+    font-size: 18px;
+  }
+}
